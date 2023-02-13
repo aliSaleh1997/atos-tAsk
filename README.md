@@ -20,6 +20,13 @@ Done!
 
 >install jenkins
 
+helm repo add jenkins https://charts.jenkins.io
+helm repo update
+helm upgrade --install myjenkins jenkins/jenkins  -n jenkins
+
+change to LoadBalancer
+
+
 
 
 >install sonarqube
@@ -72,3 +79,8 @@ docker login nexus.example.com
 docker push ip_nexus/myimage
 
 _________________________________________________________________________________________________________
+
+
+
+
+
